@@ -1,6 +1,6 @@
 Compile with something like
 
-    gnatbuild -gnat12 -gnatwa hello.adb
+    gnatmake -gnat12 -gnatwa hello.adb
 
 The C++ template example is compiled easily with
 
