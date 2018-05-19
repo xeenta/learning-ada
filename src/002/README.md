@@ -1,4 +1,4 @@
-See (add link when generated).
+See [the second learning ada article on Steemit](https://steemit.com/ada-lang/@xinta/learning-ada-2-more-on-packages-naming-conventions-and-bits-of-types).
 
 - `gnatmake -gnat12 -gnatwa greeter.adb`
 - `gnatmake -gnat12 -gnatwa test_pkg.adb`
