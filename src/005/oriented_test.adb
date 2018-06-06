@@ -12,7 +12,7 @@ procedure Oriented_Test is
      (Object => Object, Name => Object_Access);
    
 begin
-   Void_Obj.Create (10);
+   Void_Obj.Initialize (10);
    -- Obj2 := Void_Obj; -- no, because limited
    Obj_A := NewObj;
    Obj_A2 := Obj_A; -- not a good idea
