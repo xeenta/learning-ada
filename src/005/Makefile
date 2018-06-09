@@ -5,7 +5,7 @@ ifdef PREFIX
   GNATMAKE=$(PREFIX)/bin/gnatmake
 endif
 GNATCOMPILE=$(GNATMAKE) -gnat2012 -gnatwa
-TESTS=test_humans oriented_test animalfarm-private animalfarm-protected test_humans_horses
+TESTS=test_humans oriented_test animalfarm-private animalfarm-protected test_humans_horses My_Class.class
 
 all : $(TESTS)
 
@@ -20,6 +20,9 @@ animalfarm-private: animalfarm-private.cpp
 
 animalfarm-protected: animalfarm-protected.cpp
 	g++ -std=c++11 $< -o $@
+
+My_Class.class: My_Class.java
+	javac $<
 
 test_humans_horses: test_humans_horses.adb animals.adb animals.ads animals-humans.adb animals-humans.ads animals-flying_horses.ads animals-flying_horses.adb
 	$(GNATCOMPILE) $<
