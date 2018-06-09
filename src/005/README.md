@@ -1,4 +1,4 @@
-Read the article [Learning Ada 5](FIXME).
+Read the article [Learning Ada 5](https://steemit.com/ada-lang/@xinta/learning-ada-5-object-oriented-paradigm).
 
 # Humans are animals
 
