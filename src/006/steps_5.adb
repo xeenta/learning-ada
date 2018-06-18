@@ -10,18 +10,18 @@ procedure Steps_5 is
    task body Step_By_Step is
    begin
       loop
-	 select
-	    accept Step_One do
-	       Put_Line ("1");
-	    end Step_One;
-	 or
-	    accept Step_Two do
-	       Put_Line ("2");
-	    end Step_Two;
-	 or
-	    terminate;
-	 end select;
-	 Put_Line ("Again?!");
+         select
+            accept Step_One do
+               Put_Line ("1");
+            end Step_One;
+         or
+            accept Step_Two do
+               Put_Line ("2");
+            end Step_Two;
+         or
+            terminate;
+         end select;
+         Put_Line ("Again?!");
       end loop;
       Put_Line ("Never been here");
    end Step_By_Step;
