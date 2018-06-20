@@ -14,21 +14,21 @@ procedure Steps_6 is
          select
             accept Step_One do
                Put_Line ("1");
-	       Waiting_Count := 1;
+               Waiting_Count := 1;
             end Step_One;
          or
             accept Step_Two do
                Put_Line ("2");
-	       Waiting_Count := 1;
+               Waiting_Count := 1;
             end Step_Two;
          or
             delay 3.0;
-	    if Waiting_Count mod 4 = 0 then
-	       Put_Line ("Hurry Up, call me!");
-	    else
-	       Put_Line ("No calls. Waiting for another 3 secs");
-	    end if;
-	    Waiting_Count := Waiting_Count + 1;
+            if Waiting_Count mod 4 = 0 then
+               Put_Line ("Hurry Up, call me!");
+            else
+               Put_Line ("No calls. Waiting for another 3 secs");
+            end if;
+            Waiting_Count := Waiting_Count + 1;
          end select;
       end loop;
    end Step_By_Step;
